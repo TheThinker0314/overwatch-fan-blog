@@ -20,9 +20,14 @@ body {
 /* Headers with modern Space Grotesk font */
 h1, h2, h3, h4, h5, h6, .f1, .f2, .f3, .f4 {
   font-family: 'Space Grotesk', sans-serif;
-  color: #ffffff;
+  color: #1e293b; /* Dark Slate for contrast against white backgrounds */
   letter-spacing: -0.03em;
-  font-weight: 700;
+  font-weight: 800;
+}
+
+/* Specific override for headers on the dark hero/nav backgrounds to keep them readable */
+header h1, nav .f3, .bg-black h1, .bg-black h2, .bg-black h3, .bg-black h4 {
+  color: #ffffff;
 }
 
 /* Header/Nav tweaks */
