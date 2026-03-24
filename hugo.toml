@@ -2,4 +2,8 @@ baseURL = 'https://TheThinker0314.github.io/GenAI-news-site/'
 languageCode = 'en-us'
 title = 'GenAI News Site'
 theme = 'ananke'
-description = 'Your daily source for the latest news and trends in Generative AI.'
+
+[params]
+  description = 'Your daily source for the latest news and trends in Generative AI.'
+  custom_css = ["css/custom.css"]
+  background_color_class = "bg-black"
