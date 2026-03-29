@@ -1,0 +1,9 @@
+---
+title: "Amazon India women leaders reveal how AI innovation powers shopping - Storyboard18"
+date: 2026-03-29T08:00:02Z
+draft: false
+tags: ["GenAI", "News"]
+categories: ["News"]
+---
+
+[Read the full article here](https://news.google.com/rss/articles/CBMivwFBVV95cUxQcGdwM0dTV043Mk5oQnZqTVpYQWo3a0stOGlwdVpGU1NwcjNRQVJSZ0ZIeWM4dkNKTzVGcm5UVU4tbUNYRWNWbktSbnhBZE5VTEtfN0xwRVdpbDBFa3lLSjBTVDJVVmNxNEVzLXhfNmxtQUtneGdCOXdLQk1mX0dhVnJDWEktNGdnUk1pUUJZeWFfMWdyMWtYbWNqeGFweHdWOFJRWUhGRUFhektKSncza3VydkxaNkxJcnRGWVJ6Z9IBxAFBVV95cUxQXzQ2OV91aVNjWGtxSnVrd3o4SEF5ZzQtUG5WUWxhR0tGT0hyZzZBbHZlbFdzSFdkSjZuNm1XRWE3MHBxZ0oxWWZoeEFaWFhLb0JyeWFOMWZ5OW1OeGM1QllWVG9STC0ya0JESmktdUhoeE1nR1pMTG5lR2NWeWhXQUJRTEJGemx5d3QyWUlwWWpwRmU4V3BYUmFiSzAyLXFWYmpCVkx4WElCdlVweUc2YmdmdnZMbGRyTFVJTUotV2pBMUZG?oc=5)
