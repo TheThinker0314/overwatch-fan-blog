@@ -2241,3 +2241,13 @@ Created post: insilico-medicine-and-tenacia-biotech-expand-ai-dr.md
  create mode 100644 content/posts/ai-doesnt-reduce-workit-intensifies-it---harvard-b.md
 Everything up-to-date
 Created post: ai-doesnt-reduce-workit-intensifies-it---harvard-b.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 6fdf06c] feat: Auto-post ai-budgets-soar-roi-still-elusive---computerworld.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/ai-budgets-soar-roi-still-elusive---computerworld.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 6fdf06caee3c4c1f67d280e12dda9c55bdd71583 but expected 465fa9282d4ce4ffcc31142ad4172874ab71d18e)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: ai-budgets-soar-roi-still-elusive---computerworld.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
