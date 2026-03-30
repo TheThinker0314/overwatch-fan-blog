@@ -1,78 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap');
-
-:root {
-  --primary-accent: #6366f1; /* Indigo */
-  --primary-hover: #4f46e5;
-  --bg-main: #0f172a; /* Slate 900 */
-  --bg-card: #1e293b; /* Slate 800 */
-  --text-primary: #f8fafc; /* Slate 50 */
-  --text-secondary: #94a3b8; /* Slate 400 */
-  --border-color: #334155; /* Slate 700 */
-}
-
 body {
-  background-color: var(--bg-main);
-  color: var(--text-primary);
-  font-family: 'Inter', -apple-system, sans-serif;
-  line-height: 1.7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #fafafa !important;
+  color: #333 !important;
+  line-height: 1.6;
 }
 
-/* Headers with modern Space Grotesk font */
-h1, h2, h3, h4, h5, h6, .f1, .f2, .f3, .f4 {
-  font-family: 'Space Grotesk', sans-serif;
-  color: #1e293b; /* Dark Slate for contrast against white backgrounds */
-  letter-spacing: -0.03em;
-  font-weight: 800;
-}
-
-/* Specific override for headers on the dark hero/nav backgrounds to keep them readable */
-header h1, nav .f3, .bg-black h1, .bg-black h2, .bg-black h3, .bg-black h4 {
-  color: #ffffff;
-}
-
-/* Header/Nav tweaks */
-nav, header {
-  background-color: rgba(15, 23, 42, 0.8) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-color);
+h1, h2, h3, h4, h5, h6 {
+  color: #111 !important;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 a {
-  color: var(--primary-accent);
-  transition: all 0.3s ease;
+  color: #0056b3 !important;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: var(--primary-hover);
+  color: #003d82 !important;
   text-decoration: underline;
 }
 
-.bg-black { background-color: var(--bg-main) !important; }
-.bg-near-black { background-color: var(--bg-card) !important; }
-
-/* Article cards */
-article, .nested-copy-line-height p {
-  color: var(--text-secondary);
+.bg-black {
+  background-color: #2c3e50 !important; /* Update the dark header to a nicer slate blue */
 }
 
-.pb3-ns {
-  background: var(--bg-card);
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 2rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--border-color);
-  transition: transform 0.2s, box-shadow 0.2s;
+.lh-copy {
+  line-height: 1.8 !important;
 }
 
-.pb3-ns:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+/* Improve post cards */
+article.mw5 {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #eaeaea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.nested-links a {
-  color: var(--primary-accent);
-  font-weight: 600;
+article.mw5:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.f6.lh-copy.nested-copy-line-height.nested-links {
+  font-size: 1rem !important;
 }
