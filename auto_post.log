@@ -2343,3 +2343,13 @@ Created post: soras-shutdown-could-be-a-reality-check-moment-for.md
  create mode 100644 content/posts/the-anti-ai-slop-playbook---voguecom.md
 Everything up-to-date
 Created post: the-anti-ai-slop-playbook---voguecom.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 95a1a5b] feat: Auto-post we-dont-let-babies-play-with-electricity--why-are-.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/we-dont-let-babies-play-with-electricity--why-are-.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 95a1a5bfac8eebcd011002a8334929037180bca4 but expected ebdc974381cdffb1b675227113da0fafdfedd684)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: we-dont-let-babies-play-with-electricity--why-are-.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
