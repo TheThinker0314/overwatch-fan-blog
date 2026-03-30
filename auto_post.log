@@ -2383,3 +2383,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: mistral-ai-lands-830m-for-ai-data-center---ai-busi.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 3b5219e] feat: Auto-post ufc-boss-tells-fans-to-shut-the-fk-up-about-ai-slo.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/ufc-boss-tells-fans-to-shut-the-fk-up-about-ai-slo.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 3b5219e3dd6555c9adeb2b0f4729b5a3f1a2e916 but expected 7511328b2a603a48d132c09213d670dfcaca8399)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: ufc-boss-tells-fans-to-shut-the-fk-up-about-ai-slo.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
