@@ -2483,3 +2483,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: openais-video-ai-platform-sora-was-costing-it-1-mi.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main e1fe7af] feat: Auto-post mistral-ai-lands-830m-for-ai-data-center---aibusin.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/mistral-ai-lands-830m-for-ai-data-center---aibusin.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at e1fe7af331fe7aeeb3dac49fce4971707836b696 but expected 9aea4aab3c4bce161526e83d99d669401716b3d4)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: mistral-ai-lands-830m-for-ai-data-center---aibusin.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
