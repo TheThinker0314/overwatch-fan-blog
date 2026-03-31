@@ -1,13 +1,41 @@
-
 body {
-  background-color: #f0f2f5;
-  font-family: 'Inter', sans-serif;
+  background-color: #f4f6f8;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #333;
 }
 
 .bg-near-white {
-  background-color: #f0f2f5 !important;
+  background-color: #f4f6f8 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
+article {
+  line-height: 1.7;
 }
