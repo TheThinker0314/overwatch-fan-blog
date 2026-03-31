@@ -2772,3 +2772,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: generative-ai-and-copyright-laws-shaping-the-futur.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 57e0c61] feat: Auto-post can-google-googl-defend-its-search-moat-in-the-gen.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/can-google-googl-defend-its-search-moat-in-the-gen.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at f46f046c26e87139e0ea3b7dfb342a170eb32dee but expected 0bf9d94f4c89d735b906e9f00f59e439348431fa)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: can-google-googl-defend-its-search-moat-in-the-gen.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
