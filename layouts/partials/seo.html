@@ -21,3 +21,18 @@
 {{ with .Params.images }}
 <meta name="twitter:image" content="{{ index . 0 | absURL }}">
 {{ end }}
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if .IsPage }}Article{{ else }}WebSite{{ end }}",
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}",
+  "url": "{{ .Permalink }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}"
+  }
+}
+</script>
