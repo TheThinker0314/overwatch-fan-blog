@@ -1,4 +1,4 @@
-baseURL = 'https://TheThinker0314.github.io/GenAI-news-site/'
+baseURL = 'https://genai-news.com/'
 languageCode = 'en-us'
 title = 'GenAI News Hub | Latest in Generative AI'
 theme = 'ananke'
