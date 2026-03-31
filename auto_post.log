@@ -2897,3 +2897,13 @@ hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 Created post: why-ai-trend-drivers-for-ai-adoption-in-the-public.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main b96757cd] feat: Auto-post globe-pr-wire-globeprwireorg-advances-geo-and-ai-f.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/globe-pr-wire-globeprwireorg-advances-geo-and-ai-f.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]   main -> main (cannot lock ref 'refs/heads/main': is at b96757cde2dbdcfd1afa24f8ddf2c01ef5823643 but expected a676142cac4260165d09e0d2ccf8c62531b8257c)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: globe-pr-wire-globeprwireorg-advances-geo-and-ai-f.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
