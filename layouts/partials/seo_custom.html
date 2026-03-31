@@ -4,7 +4,27 @@
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ if .Params.images }}
+<meta property="og:image" content="{{ index .Params.images 0 | absURL }}">
+<meta name="twitter:image" content="{{ index .Params.images 0 | absURL }}">
+{{ else if .Site.Params.images }}
+<meta property="og:image" content="{{ index .Site.Params.images 0 | absURL }}">
+<meta name="twitter:image" content="{{ index .Site.Params.images 0 | absURL }}">
+{{ end }}
+<meta name="twitter:card" content="{{ default "summary_large_image" .Site.Params.twitter_card }}">
 <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
 <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if .IsPage }}Article{{ else }}WebSite{{ end }}",
+  "headline": "{{ .Title }}",
+  "url": "{{ .Permalink }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}"
+  }
+}
+</script>
