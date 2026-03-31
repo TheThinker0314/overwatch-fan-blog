@@ -2937,3 +2937,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: build-reliable-ai-agents-with-amazon-bedrock-agent.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main c675834a] feat: Auto-post the-worlds-first-generative-ai-guitar-creates-play.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/the-worlds-first-generative-ai-guitar-creates-play.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]   main -> main (cannot lock ref 'refs/heads/main': is at c675834a372cb350b6b4cb3c7a0472f758bcfb65 but expected 7bf14e3b4c93461dc844b9d7a3c03d99e6db238b)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: the-worlds-first-generative-ai-guitar-creates-play.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
