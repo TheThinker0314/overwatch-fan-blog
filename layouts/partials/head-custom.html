@@ -1,16 +1,96 @@
 <meta name="description" content="{{ .Description | default .Site.Params.description }}">
-<meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else }}GenAI, AI, ChatGPT, Machine Learning, News{{ end }}">
+<meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else }}GenAI, AI, ChatGPT, Machine Learning, News, Generative AI{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-  body { font-family: 'Inter', sans-serif; }
-  h1 { font-size: 2.5rem; color: #1a202c; }
-  p { line-height: 1.75; color: #4a5568; }
-  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-  .post-title a { color: #2b6cb0; text-decoration: none; }
-  .post-title a:hover { text-decoration: underline; }
+  :root {
+    --primary-color: #2b6cb0;
+    --primary-hover: #1a365d;
+    --text-color: #2d3748;
+    --bg-color: #f7fafc;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+  }
+  body { 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6 { 
+    color: #1a202c; 
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  h1 { font-size: 2.5rem; letter-spacing: -0.025em; }
+  h2 { font-size: 2rem; }
+  p { margin-bottom: 1.25em; }
+  .container { 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 40px 20px; 
+  }
+  .post-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  .post-title {
+    margin-top: 0;
+  }
+  .post-title a { 
+    color: var(--primary-color); 
+    text-decoration: none; 
+    transition: color 0.2s ease;
+  }
+  .post-title a:hover { 
+    color: var(--primary-hover);
+    text-decoration: underline; 
+  }
+  .post-meta {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-bottom: 16px;
+  }
+  header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  header a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid var(--border-color);
+    color: #718096;
+    font-size: 0.875rem;
+  }
 </style>
