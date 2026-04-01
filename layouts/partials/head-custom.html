@@ -1,0 +1,16 @@
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else }}GenAI, AI, ChatGPT, Machine Learning, News{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  h1 { font-size: 2.5rem; color: #1a202c; }
+  p { line-height: 1.75; color: #4a5568; }
+  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+  .post-title a { color: #2b6cb0; text-decoration: none; }
+  .post-title a:hover { text-decoration: underline; }
+</style>
