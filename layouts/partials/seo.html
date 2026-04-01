@@ -1,38 +1,23 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#111827">
-<meta name="robots" content="index, follow">
-<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<!-- layouts/partials/seo.html -->
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | safeHTML }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
-
-<meta name="keywords" content="Generative AI, GenAI, AI News, ChatGPT, LLM, Artificial Intelligence, Tech News, Midjourney, OpenAI, Anthropic, Claude">
-<meta name="author" content="{{ site.Params.author }}">
-<link rel="canonical" href="{{ .Permalink }}">
-
-<!-- Open Graph -->
-<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | safeHTML }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+<!-- Open Graph meta tags -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
 {{ with .Params.images }}
-<meta property="og:image" content="{{ index . 0 | absURL }}">
-{{ else }}
-<meta property="og:image" content="{{ site.Params.images | absURL }}">
+{{ range first 6 . }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
 {{ end }}
 
-<!-- Twitter Card -->
+<!-- Twitter Card meta tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | safeHTML }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+<meta name="twitter:site" content="@yourtwitterhandle">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 {{ with .Params.images }}
 <meta name="twitter:image" content="{{ index . 0 | absURL }}">
-{{ else }}
-<meta name="twitter:image" content="{{ site.Params.images | absURL }}">
 {{ end }}
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
