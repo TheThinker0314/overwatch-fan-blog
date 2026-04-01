@@ -3410,3 +3410,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: progress-software-delivers-sitefinity-generative-c.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main a685b357] feat: Auto-post tech-sell-off-1-no-brainer-artificial-intelligence.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/tech-sell-off-1-no-brainer-artificial-intelligence.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]   main -> main (cannot lock ref 'refs/heads/main': is at a685b3571860b0954dd3908b5a54b59d645f6708 but expected 90d997057f39dad359071757ec5e793212867dd5)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: tech-sell-off-1-no-brainer-artificial-intelligence.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
