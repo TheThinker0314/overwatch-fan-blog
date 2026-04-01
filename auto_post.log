@@ -3328,3 +3328,11 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: integral-ad-science-earns-prestigious-webby-finali.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 23629255] feat: Auto-post visa-turns-to-generative-ai-to-settle-card-dispute.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/visa-turns-to-generative-ai-to-settle-card-dispute.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   919563ad..23629255  main -> main
+Created post: visa-turns-to-generative-ai-to-settle-card-dispute.md
