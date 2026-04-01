@@ -3172,3 +3172,11 @@ Created post: why-ai-transparency-is-the-key-to-richer-instructi.md
  create mode 100644 content/posts/the-flip-side-of-generative-ai---kpmgcom.md
 Everything up-to-date
 Created post: the-flip-side-of-generative-ai---kpmgcom.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main cad82a4f] feat: Auto-post why-enterprise-ai-stalls-before-it-scales---ai-bus.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/why-enterprise-ai-stalls-before-it-scales---ai-bus.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   f7c7fea2..cad82a4f  main -> main
+Created post: why-enterprise-ai-stalls-before-it-scales---ai-bus.md
