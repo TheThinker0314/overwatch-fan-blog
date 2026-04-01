@@ -3248,3 +3248,11 @@ Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status
 To https://github.com/TheThinker0314/GenAI-news-site.git
    6f8b9f84..077bcb1d  main -> main
 Created post: dont-let-ai-destroy-the-skills-that-make-your-comp.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 12ad3e8b] feat: Auto-post broken-frontier-andytorial-for-april-2026---synthe.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/broken-frontier-andytorial-for-april-2026---synthe.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   c79377a6..12ad3e8b  main -> main
+Created post: broken-frontier-andytorial-for-april-2026---synthe.md
