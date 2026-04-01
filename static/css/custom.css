@@ -102,3 +102,14 @@ article {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* Accessibility and UI enhancements */
+a:focus, button:focus {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+}
+.article-body h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 0.5rem;
+}
