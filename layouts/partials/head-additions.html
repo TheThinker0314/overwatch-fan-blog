@@ -1,3 +1,6 @@
+<!-- Canonical link -->
+<link rel="canonical" href="{{ .Permalink }}">
+
 <!-- SEO Improvements -->
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
