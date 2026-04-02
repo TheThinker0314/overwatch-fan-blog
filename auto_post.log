@@ -3493,3 +3493,11 @@ hint: before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 Created post: ai-uptake-across-italian-firms-remains-patchy-stud.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main fc7e65da0] feat: Auto-post a-new-chapter-in-taiwan-japan-tech-collaboration-n.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/a-new-chapter-in-taiwan-japan-tech-collaboration-n.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   3378e49d4..fc7e65da0  main -> main
+Created post: a-new-chapter-in-taiwan-japan-tech-collaboration-n.md
