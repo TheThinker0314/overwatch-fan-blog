@@ -26,6 +26,23 @@
   }]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "{{ .Site.BaseURL }}"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "{{ .Title }}",
+    "item": "{{ .Permalink }}"
+  }]
+}
+</script>
 {{ end }}
 <meta name="keywords" content="Generative AI, AI News, ChatGPT, LLM, Midjourney, AI Trends, Artificial Intelligence">
 <meta property="og:locale" content="en_US" />
