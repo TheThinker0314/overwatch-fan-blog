@@ -46,12 +46,12 @@ a:hover {
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   padding: 20px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
-  transition: all 0.3s ease;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
 
 pre {
@@ -64,4 +64,24 @@ pre {
 code {
   font-family: "Courier New", Courier, monospace;
   color: #e6e6e6;
+}
+
+/* New Design Improvements */
+header {
+  border-bottom: 1px solid #333;
+}
+.pb4 {
+  padding-bottom: 2rem;
+}
+article img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+blockquote {
+  border-left: 4px solid #4da8da;
+  padding-left: 15px;
+  margin-left: 0;
+  color: #ccc;
+  font-style: italic;
 }
