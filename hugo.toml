@@ -16,6 +16,7 @@ enableRobotsTXT = true
   # SEO Enhancements
   images = ["images/og-image.jpg"]
   twitter_card = "summary_large_image"
+  robots = "index, follow"
 
 [menu]
   [[menu.main]]

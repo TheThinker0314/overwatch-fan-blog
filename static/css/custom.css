@@ -1,3 +1,4 @@
+html { scroll-behavior: smooth; }
 body { font-family: "Inter", sans-serif; line-height: 1.7; color: #333; background-color: #f8fafc; margin: 0; padding: 0; }
 h1, h2, h3 { font-family: "Merriweather", serif; font-weight: 800; color: #111827; margin-bottom: 0.75em; letter-spacing: -0.025em; }
 .ananke-background { background-color: #0f172a !important; }
@@ -16,3 +17,13 @@ h2 { font-size: 2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; 
 .site-title { font-weight: 900; background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .post-list-item { transition: transform 0.2s ease; border-radius: 12px; padding: 1.5rem; background: #fff; margin-bottom: 1.5rem; border: 1px solid #f1f5f9; }
 .post-list-item:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+
+/* Dark Mode Preferences */
+@media (prefers-color-scheme: dark) {
+  body { background-color: #0f172a; color: #f1f5f9; }
+  .content-wrapper { background: #1e293b; border-color: #334155; }
+  h1, h2, h3 { color: #f8fafc; }
+  .post-list-item { background: #1e293b; border-color: #334155; }
+  a { color: #60a5fa; }
+  blockquote { background: #1e293b; color: #cbd5e1; }
+}
