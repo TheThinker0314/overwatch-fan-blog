@@ -3614,3 +3614,13 @@ Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status
 To https://github.com/TheThinker0314/GenAI-news-site.git
    adb34e511..bdd4ae7a4  main -> main
 Created post: ai-project-failure-has-little-to-do-with-ai---comp.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 635beed0d] feat: Auto-post rocket-close-aws-partner-to-automate-mortgage-docu.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/rocket-close-aws-partner-to-automate-mortgage-docu.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at 635beed0dc51fcff7cb652fd2f22e4ed7e8f2edf but expected 7ca0baa7fff44dd0d01b0568c2ea264acf621fa2)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: rocket-close-aws-partner-to-automate-mortgage-docu.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
