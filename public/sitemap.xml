@@ -2,42 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://genai-news.com/posts/ai-could-handle-your-next-credit-card-dispute-visa/</loc>
-    <lastmod>2026-04-02T18:00:02+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>https://genai-news.com/categories/</loc>
-    <lastmod>2026-04-02T18:00:02+00:00</lastmod>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://genai-news.com/tags/genai/</loc>
-    <lastmod>2026-04-02T18:00:02+00:00</lastmod>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://genai-news.com/</loc>
-    <lastmod>2026-04-02T18:00:02+00:00</lastmod>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/ncsa-mechse-develop-genai-workflow-for-metamateria/</loc>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://genai-news.com/tags/news/</loc>
-    <lastmod>2026-04-02T18:00:02+00:00</lastmod>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://genai-news.com/categories/news/</loc>
-    <lastmod>2026-04-02T18:00:02+00:00</lastmod>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://genai-news.com/posts/</loc>
-    <lastmod>2026-04-02T18:00:02+00:00</lastmod>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>https://genai-news.com/tags/</loc>
+    <lastmod>2026-04-02T22:30:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/microsoft-generative-ai-report-the-40-jobs-most-di/</loc>
+    <lastmod>2026-04-02T22:00:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/hollywood-adapts-to-aioutsiders-master-itcollabora/</loc>
+    <lastmod>2026-04-02T21:30:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/anabaptist-resistance-to-ai---goshen-college/</loc>
+    <lastmod>2026-04-02T18:30:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/ai-could-handle-your-next-credit-card-dispute-visa/</loc>
     <lastmod>2026-04-02T18:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
