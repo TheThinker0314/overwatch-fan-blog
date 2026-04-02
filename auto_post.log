@@ -3738,3 +3738,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: ncsa-mechse-develop-genai-workflow-for-metamateria.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 3e7c990ea] feat: Auto-post wonder-3d-generative-ai-model-launches---autodesk-.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/wonder-3d-generative-ai-model-launches---autodesk-.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at 3e7c990ead573728f48d4408c0402a9f21e84aa2 but expected 2de8e7aea42bdc43aa25afd70a2660dafeccb985)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: wonder-3d-generative-ai-model-launches---autodesk-.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.

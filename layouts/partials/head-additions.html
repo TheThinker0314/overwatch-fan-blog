@@ -1,32 +1,34 @@
-<!-- Canonical link -->
-<link rel="canonical" href="{{ .Permalink }}">
-
-<!-- SEO Improvements -->
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
-<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
-{{ if .Params.images }}
-<meta property="og:image" content="{{ index .Params.images 0 | absURL }}">
-{{ else if .Site.Params.images }}
-<meta property="og:image" content="{{ index .Site.Params.images 0 | absURL }}">
-{{ end }}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<!-- Structured Data -->
+{{ if .IsPage }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{{ if .IsPage }}Article{{ else }}WebSite{{ end }}",
+  "@type": "NewsArticle",
   "headline": "{{ .Title }}",
-  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}",
-  "url": "{{ .Permalink }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "GenAI News Team"
+  },
   "publisher": {
     "@type": "Organization",
-    "name": "{{ .Site.Title }}"
-  }
+    "name": "GenAI News Hub",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "images/og-image.jpg" | absURL }}"
+    }
+  },
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}"
 }
 </script>
+{{ else }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "{{ .Site.BaseURL }}",
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Params.description }}"
+}
+</script>
+{{ end }}
