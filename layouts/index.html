@@ -1,38 +1,42 @@
 {{ define "main" }}
-<header class="hero ph3 ph5-l pv5-l bg-primary-color" role="banner">
-  <div class="measure-wide center tc-l">
-    <h1 class="f1-l f2-m f3 fw7 white">Generative AI News, Trends & Breakthroughs</h1>
-    <p class="f4-l f5-m f6 white-80 lh-copy mt3">Your daily source for the latest breakthroughs, models, and comprehensive analysis in Generative AI.</p>
-  </div>
-</header>
+<div class="space-y-12">
+  <section class="text-center py-12 bg-blue-50 rounded-2xl shadow-sm border border-blue-100">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">Generative AI News & Breakthroughs</h1>
+    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Your daily source for the latest models, trends, and comprehensive analysis in the world of AI.</p>
+  </section>
 
-<section class="content-grid pa3 pa5-ns">
-  <h2 class="f2-l f3-m f4 tc-l white mb5">Latest AI News</h2>
-  <div class="modern-grid">
-    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-    {{ range first 6 $pages }}
-      <article class="post-card grow">
-        <a href="{{ .Permalink }}" class="db no-underline ba b--black-10 br3 shadow-4 bg-near-black white hover-bg-dark-gray h-100 flex flex-column overflow-hidden" aria-label="Read more about {{ .Title }}">
-          {{ with .Params.images }}
-            <div class="card-image-wrapper">
-              <img src="{{ index . 0 }}" alt="Cover image for {{ $.Title }}" class="w-100 db object-cover h5" loading="lazy" width="800" height="450">
-            </div>
-          {{ else }}
-            <div class="card-image-wrapper bg-dark-gray flex items-center justify-center h5">
-              <span class="white-50">No Image</span>
-            </div>
-          {{ end }}
-          <div class="pa4 flex-auto flex flex-column">
-            <h3 class="f4 fw6 mb3 white-90 lh-title">{{ .Title }}</h3>
-            <p class="f6 white-60 lh-copy measure-wide flex-auto">{{ .Summary }}</p>
-            <div class="mt4 f6 fw6 db white-50 text-transform-uppercase">Read article &rarr;</div>
-          </div>
+  <section>
+    <div class="flex justify-between items-end mb-6">
+      <h2 class="text-3xl font-bold text-gray-800">Latest Updates</h2>
+      <a href="/posts/" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors">View all news &rarr;</a>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ $pages := where .Site.RegularPages "Type" "in" (slice "posts") }}
+      {{ range first 6 $pages }}
+      <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full border border-gray-100">
+        {{ if .Params.images }}
+        <a href="{{ .Permalink }}" class="block aspect-w-16 aspect-h-9 overflow-hidden">
+          <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" class="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300">
         </a>
+        {{ else }}
+        <a href="{{ .Permalink }}" class="block w-full h-48 bg-gray-200 flex items-center justify-center text-gray-400">
+          <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+        </a>
+        {{ end }}
+        <div class="p-6 flex flex-col flex-grow">
+          <time class="text-sm text-blue-600 font-semibold mb-2" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          <a href="{{ .Permalink }}" class="block">
+            <h3 class="text-xl font-bold text-gray-900 mb-2 hover:text-blue-600 transition-colors line-clamp-2">{{ .Title }}</h3>
+          </a>
+          <p class="text-gray-600 flex-grow line-clamp-3 mb-4">{{ .Summary }}</p>
+          <a href="{{ .Permalink }}" class="text-blue-600 font-semibold hover:underline mt-auto inline-flex items-center">Read article
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
       </article>
-    {{ end }}
-  </div>
-  <div class="tc mt5">
-    <a href="/posts/" class="f4 fw6 no-underline dib pv3 ph4 br-pill bg-blue white hover-bg-dark-blue hover-light-gray shadow-3 transition-colors" aria-label="View all news posts">View All News</a>
-  </div>
-</section>
+      {{ end }}
+    </div>
+  </section>
+</div>
 {{ end }}

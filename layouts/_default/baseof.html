@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
+    {{ with .Description | default site.Params.description }}
+    <meta name="description" content="{{ . }}">
+    {{ end }}
+    <meta property="og:title" content="{{ .Title }}">
+    {{ with .Description | default site.Params.description }}
+    <meta property="og:description" content="{{ . }}">
+    {{ end }}
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with site.Params.images }}
+    <meta property="og:image" content="{{ index . 0 | absURL }}">
+    {{ end }}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    {{ with .Description | default site.Params.description }}
+    <meta name="twitter:description" content="{{ . }}">
+    {{ end }}
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col">
+    <header class="bg-blue-600 text-white shadow-md">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold tracking-tight">{{ site.Title }}</a>
+        <nav class="space-x-4">
+          {{ range site.Menus.main }}
+          <a href="{{ .URL }}" class="hover:text-blue-200 transition-colors">{{ .Name }}</a>
+          {{ end }}
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center mt-auto">
+      <div class="max-w-6xl mx-auto px-4">
+        <p>&copy; {{ now.Format "2006" }} {{ site.Title }}. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

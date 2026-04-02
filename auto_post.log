@@ -3464,3 +3464,18 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: todd-kiesz--the-emperor-has-no-clothes--or-does-he.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 0eedcb8a] feat: Auto-post asanas-chief-product-officer-why-enterprise-ai-age.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/asanas-chief-product-officer-why-enterprise-ai-age.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [rejected]          main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Created post: asanas-chief-product-officer-why-enterprise-ai-age.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
