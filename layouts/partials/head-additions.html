@@ -1,4 +1,6 @@
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+<meta name="keywords" content="Generative AI, AI News, ChatGPT, LLM, Artificial Intelligence, Machine Learning, Open Source AI">
+<meta name="author" content="{{ .Site.Params.author }}">
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
