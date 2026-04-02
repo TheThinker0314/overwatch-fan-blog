@@ -1,4 +1,41 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  <div>{{ .Content }}</div>
+<article class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden my-8 border border-gray-100">
+  <header class="mb-8 relative">
+    {{ if .Params.images }}
+    <div class="w-full h-64 md:h-96 relative overflow-hidden">
+      <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight drop-shadow-md">{{ .Title }}</h1>
+      <div class="flex items-center space-x-4 text-sm font-medium">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" class="bg-blue-600/80 px-3 py-1 rounded-full backdrop-blur-sm shadow-sm">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ with .Params.author | default site.Params.author }}
+        <span class="bg-gray-800/80 px-3 py-1 rounded-full backdrop-blur-sm shadow-sm">By {{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+    {{ else }}
+    <div class="p-8 pb-4 bg-gray-50 border-b border-gray-100">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight leading-tight">{{ .Title }}</h1>
+      <div class="flex items-center space-x-4 text-sm text-gray-500 font-medium">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ with .Params.author | default site.Params.author }}
+        <span>&bull; By {{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="prose prose-lg prose-blue max-w-none px-8 pb-12 prose-headings:font-bold prose-headings:text-gray-900 prose-a:text-blue-600 prose-img:rounded-xl">
+    {{ .Content }}
+  </div>
+
+  <footer class="px-8 py-6 bg-gray-50 border-t border-gray-100 flex flex-wrap gap-2">
+    {{ range .Params.tags }}
+    <a href="/tags/{{ . | urlize }}" class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gray-200 text-gray-700 hover:bg-blue-600 hover:text-white transition-colors duration-200">#{{ . }}</a>
+    {{ end }}
+  </footer>
+</article>
 {{ end }}
