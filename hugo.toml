@@ -6,6 +6,7 @@ enableRobotsTXT = true
 
 [params]
   description = 'The GenAI News Hub is your daily source for the latest breakthroughs, trends, models, and analysis in the world of Generative Artificial Intelligence. Explore AI news, ChatGPT updates, LLM developments, and tech advancements.'
+  keywords = ["Generative AI", "LLM", "ChatGPT", "AI News", "Machine Learning", "Tech Trends"]
   custom_css = ["css/custom.css"]
   background_color_class = "bg-black"
   author = "GenAI News Team"
