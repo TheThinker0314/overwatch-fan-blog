@@ -4,6 +4,9 @@
 <!-- Canonical link -->
 <link rel="canonical" href="{{ .Permalink }}">
 
+<!-- Robots meta tag for SEO -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
 <!-- Open Graph meta tags -->
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
