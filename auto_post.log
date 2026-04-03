@@ -3813,3 +3813,11 @@ Created post: nothing-in-our-games-will-be-ai-generated-ever-say.md
 To https://github.com/TheThinker0314/GenAI-news-site.git
    c3d5e3ce9..5d30de2fc  main -> main
 Created post: take-two-reshuffles-its-ai-team-its-truly-disappoi.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 2a3f69a2a] feat: Auto-post is-netanyahu-real-or-ai--generative-ai-warps-truth.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/is-netanyahu-real-or-ai--generative-ai-warps-truth.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   b2f898b63..2a3f69a2a  main -> main
+Created post: is-netanyahu-real-or-ai--generative-ai-warps-truth.md
