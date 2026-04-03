@@ -3748,3 +3748,11 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: wonder-3d-generative-ai-model-launches---autodesk-.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main ebfa4108b] feat: Auto-post wild-west-era-of-genai-poses-opportunities-and-cha.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/wild-west-era-of-genai-poses-opportunities-and-cha.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   49a0ecfa5..ebfa4108b  main -> main
+Created post: wild-west-era-of-genai-poses-opportunities-and-cha.md
