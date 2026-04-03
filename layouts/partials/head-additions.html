@@ -1,36 +1,24 @@
-<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
-<link rel="canonical" href="{{ .Permalink }}">
-{{ if .IsPage }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "{{ .Title }}",
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-  "author": {
-    "@type": "Organization",
-    "name": "GenAI News Team"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "GenAI News Hub",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ "images/og-image.jpg" | absURL }}"
-    }
-  },
-  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}"
-}
-</script>
-{{ else }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "{{ .Site.BaseURL }}",
-  "name": "{{ .Site.Title }}",
-  "description": "{{ .Site.Params.description }}"
-}
-</script>
-{{ end }}
+<!-- SEO enhancements -->
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="keywords" content="{{ range .Site.Params.keywords }}{{ . }},{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+<!-- Design enhancements -->
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+  }
+  .article-title {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .article-content {
+    font-size: 1.125rem;
+  }
+</style>
