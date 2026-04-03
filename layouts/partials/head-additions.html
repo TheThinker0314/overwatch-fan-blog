@@ -22,3 +22,13 @@
     font-size: 1.125rem;
   }
 </style>
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if .IsPage }}Article{{ else }}WebSite{{ end }}",
+  "name": "{{ .Title }}",
+  "url": "{{ .Permalink }}",
+  "description": "{{ .Description | default .Site.Params.description }}"
+}
+</script>

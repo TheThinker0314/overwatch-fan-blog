@@ -143,3 +143,12 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
+/* Accessibility and SEO design improvements */
+html {
+  scroll-behavior: smooth;
+}
+:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 4px;
+}
