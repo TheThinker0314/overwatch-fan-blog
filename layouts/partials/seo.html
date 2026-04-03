@@ -1,8 +1,11 @@
-<!-- layouts/partials/seo.html -->
+<!-- SEO Enhancements -->
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
 <!-- Canonical link -->
 <link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Robots meta tag for SEO -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 <!-- Open Graph meta tags -->
 <meta property="og:title" content="{{ .Title }}">
@@ -14,6 +17,10 @@
 {{ range first 6 . }}
 <meta property="og:image" content="{{ . | absURL }}">
 {{ end }}
+{{ else }}
+{{ with .Site.Params.images }}
+<meta property="og:image" content="{{ index . 0 | absURL }}">
+{{ end }}
 {{ end }}
 
 <!-- Twitter Card meta tags -->
@@ -22,9 +29,25 @@
 <meta name="twitter:creator" content="@genainews">
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+{{ with .Params.images }}
+<meta name="twitter:image" content="{{ index . 0 | absURL }}">
+{{ else }}
+{{ with .Site.Params.images }}
+<meta name="twitter:image" content="{{ index . 0 | absURL }}">
+{{ end }}
+{{ end }}
+
 <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
 <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ with .Params.images }}
-<meta name="twitter:image" content="{{ index . 0 | absURL }}">
-{{ end }}
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if .IsPage }}Article{{ else }}WebSite{{ end }}",
+  "name": "{{ .Title }}",
+  "url": "{{ .Permalink }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}"
+}
+</script>
