@@ -1,77 +1,33 @@
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #1e40af;
+  --text-main: #1f2937;
+  --bg-color: #f3f4f6;
+}
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #333;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-color);
   line-height: 1.6;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 0.5em;
-}
-
 a {
-  color: #0056b3;
-  text-decoration: none;
-  transition: color 0.2s ease;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
 }
-
 a:hover {
-  color: #003d82;
-  text-decoration: underline;
+  color: var(--secondary-color);
 }
-
-.article-header {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #eaeaea;
-  padding-bottom: 1rem;
+.header {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
-
-.post-content img {
-  max-width: 100%;
-  height: auto;
+article {
+  background: white;
+  padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin: 1.5rem 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
-
-.nav-links a {
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-}
-
-.footer {
-  background-color: #f8f9fa;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  text-align: center;
-}
-
-/* SEO & Design improvements added below */
-blockquote {
-  border-left: 4px solid #0056b3;
-  margin: 1.5rem 0;
-  padding: 0.5rem 1rem;
-  background-color: #f4f6f9;
-  font-style: italic;
-  color: #555;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #0056b3;
-  color: white;
-  border-radius: 4px;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.btn:hover {
-  background-color: #003d82;
-  text-decoration: none;
-  transform: translateY(-2px);
-  color: white;
+h1, h2, h3 {
+  font-weight: 700;
+  color: #111827;
 }
