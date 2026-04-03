@@ -4005,3 +4005,11 @@ Created post: microsoft-to-invest-10b-in-ai-and-cybersecurity-in.md
 To https://github.com/TheThinker0314/GenAI-news-site.git
    7f91b881d..ef98f0115  main -> main
 Created post: research-how-ai-is-changing-the-labor-market---hbr.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main fcc67349c] feat: Auto-post research-how-ai-is-changing-the-labor-market---har.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/research-how-ai-is-changing-the-labor-market---har.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   e7652d54f..fcc67349c  main -> main
+Created post: research-how-ai-is-changing-the-labor-market---har.md
