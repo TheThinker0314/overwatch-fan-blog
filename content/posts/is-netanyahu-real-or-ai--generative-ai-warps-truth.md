@@ -1,0 +1,9 @@
+---
+title: "Is Netanyahu real or AI? | Generative AI warps truth of West Asia war - The Hindu"
+date: 2026-04-03T07:00:02Z
+draft: false
+tags: ["GenAI", "News"]
+categories: ["News"]
+---
+
+[Read the full article here](https://news.google.com/rss/articles/CBMiywFBVV95cUxPbEZUaGN5dTl3bHp3d1RaMXNvdDBmclF2cURBemszc0RmREJQQ1pQQmE2Yl9sTGtneGRkQXdlSmRLblZLTjZZa2UwMW93NlY4cTZyTTdrbDNxdUZoa1RiX0xDb0JuRDNDTVMwS0NVWkZwZ1I5UXNnUVlLMVZ0UXFNZ1VlU0w2ZlB6VHNYZVBiWmVxLVh6eHg3bWJjaGpLcUw4QUtzNFB1LTNNWWRQeW9hckxaU0dzVko1MjVaZ2F6N1RLR1dCOFJ1dmNpVdIB0gFBVV95cUxOc0VMRjVTeGpQeFR3Zy0wVV9hSy1PZ3ctaG1lMDdJWkoyR1l1cklXVjhVWXBqcUJMUlJIRWU5UXFHQ2hiRmpFbERSeDV0TFFSU2xoNzgyYWdGRUdFcmRhOEltUFU0NjFWdzdIaXJoR1NKSjVTalBFZU9lUXY3VjR3MDZfdW1WTFYtRWFDT2UtbUhlMDhqMkNycVliVndtei1HaEcyd1kyeFZJNWZZSXlROEtJQ2NsM2t4S0Q1R255SHRaOUxURHExZkl5LVpiTGZVd0E?oc=5)
