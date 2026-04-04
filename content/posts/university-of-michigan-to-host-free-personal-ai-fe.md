@@ -1,0 +1,9 @@
+---
+title: "University of Michigan to host free personal AI festival in Ann Arbor - MLive.com"
+date: 2026-04-04T03:30:02Z
+draft: false
+tags: ["GenAI", "News"]
+categories: ["News"]
+---
+
+[Read the full article here](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaExCdkFrZWtkem5YYmozdUQxX2dHUzJUazVPelZGLUcwVkdYWklYS0U2bWFTQWFMTmQ2bVVBcFdIc05KaF9NN1lGdVlDOENSTHNtdGxxQ1M0NWhXZGRuaVhodHM4MlpocXE5VFprejZ6bXRKSENLeUFwWGFFTDR4M29hTllrNmFqOGh5UUdydVkzNHhJN2FiY1MwZUNwdDZERUFNVXRReGktMS00Nnc5VWw3a1V6WUhwSzVz0gHPAUFVX3lxTE1MWE9PNFVZUjY4SWxOMGZXRW9UNllXQThwa2xzQ2RxTmNUMHJycklzRk4xNnNRTWx1LWdSb0hfa0tXZGRrdUtGcVBhNDVteTQ5SVFjVXZHWjgxZThWSnFiZmZIN1RFOXRlQWk5UmlKUDV4ZFlHdDFzQmFoeElNbFBSWXVndEg4N1RKM0VaMmNVNTlSaDEzQVFnVjdtZDVLdk4yNFJoandnVE9SdGJQSWVMaF85VmR3enBpczhVUzRKZW9vOFdzMlRuWmJQc21wUQ?oc=5)
