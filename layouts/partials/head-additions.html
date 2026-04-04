@@ -1,3 +1,2 @@
-<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
-<link rel="canonical" href="{{ .Permalink }}">
-<!-- Removed duplicate tags that were merged into seo.html to improve performance and prevent SEO conflicts -->
+{{ partial "seo.html" . }}
+<!-- Removed duplicate canonical and keywords tags that were merged into seo.html to improve performance and prevent SEO conflicts -->
