@@ -4217,3 +4217,11 @@ Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status
 To https://github.com/TheThinker0314/GenAI-news-site.git
    db73708aa..9743ffaa9  main -> main
 Created post: artificial-intelligence-crept-into-south-dakota-la.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main b401179c7] feat: Auto-post creative-agency-in-the-age-of-ai---mccormicknorthw.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/creative-agency-in-the-age-of-ai---mccormicknorthw.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   3d91beb8b..b401179c7  main -> main
+Created post: creative-agency-in-the-age-of-ai---mccormicknorthw.md
