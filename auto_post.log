@@ -4279,3 +4279,13 @@ Created post: mit-report-95-of-generative-ai-pilots-at-companies.md
 To https://github.com/TheThinker0314/GenAI-news-site.git
    7a4c8cdfc..3598d9dfc  main -> main
 Created post: science-notes-generative-ai-and-its-impacts---rock.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 8fa1a7ff1] feat: Auto-post google-launches-open-model-family-gemma-4---aibusi.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/google-launches-open-model-family-gemma-4---aibusi.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at 8fa1a7ff1cad3227f98d26da751580fb0230a45b but expected bcb93d7f3322959675fb2b094f6bf532e0b46ad1)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: google-launches-open-model-family-gemma-4---aibusi.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
