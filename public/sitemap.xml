@@ -3,41 +3,76 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://genai-news.com/categories/</loc>
-    <lastmod>2026-04-04T09:00:02+00:00</lastmod>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/gartner-predicts-surge-in-ai-transparency-investme/</loc>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/tags/genai/</loc>
-    <lastmod>2026-04-04T09:00:02+00:00</lastmod>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/</loc>
-    <lastmod>2026-04-04T09:00:02+00:00</lastmod>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/tags/news/</loc>
-    <lastmod>2026-04-04T09:00:02+00:00</lastmod>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/categories/news/</loc>
-    <lastmod>2026-04-04T09:00:02+00:00</lastmod>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/posts/</loc>
-    <lastmod>2026-04-04T09:00:02+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url><url>
-    <loc>https://genai-news.com/posts/science-notes-generative-ai-and-its-impacts---rock/</loc>
-    <lastmod>2026-04-04T09:00:02+00:00</lastmod>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/tags/</loc>
+    <lastmod>2026-04-04T12:30:03+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/master-ai-data-security--workflows---greatandhraco/</loc>
+    <lastmod>2026-04-04T12:00:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/why-ai-lies-cheats-and-steals---computerworldcom/</loc>
+    <lastmod>2026-04-04T11:30:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/the-techbeat-how-solution-architects-can-use-gener/</loc>
+    <lastmod>2026-04-04T11:00:01+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/students-explore-the-future-of-learning-at-generat/</loc>
+    <lastmod>2026-04-04T10:30:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/ai-exposes-flaws-in-higher-education-forcing-unive/</loc>
+    <lastmod>2026-04-04T10:00:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/google-launches-open-model-family-gemma-4---aibusi/</loc>
+    <lastmod>2026-04-04T09:30:01+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/science-notes-generative-ai-and-its-impacts---rock/</loc>
     <lastmod>2026-04-04T09:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
