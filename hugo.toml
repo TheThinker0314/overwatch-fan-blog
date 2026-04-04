@@ -17,6 +17,12 @@ enableRobotsTXT = true
   images = ["images/og-image.jpg"]
   twitter_card = "summary_large_image"
   robots = "index, follow"
+  custom_js = ["js/custom.js"]
+  googleAnalytics = "G-XXXXXXXXXX"
+  rssLimit = 20
+  [params.social]
+    twitter = "GenAINews"
+    linkedin = "genai-news"
 
 [menu]
   [[menu.main]]
