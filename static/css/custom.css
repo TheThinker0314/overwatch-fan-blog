@@ -46,3 +46,17 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
+/* Better link visibility for accessibility */
+a {
+  color: #6366f1;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+a:hover {
+  color: #a855f7;
+  text-decoration-color: #a855f7;
+}
+
