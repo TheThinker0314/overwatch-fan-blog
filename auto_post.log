@@ -4387,3 +4387,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: really-you-made-this-without-ai-prove-it---theverg.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 1e603c73c] feat: Auto-post fortnite-introduces-controversial-ai-generated-bra.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/fortnite-introduces-controversial-ai-generated-bra.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at 1e603c73cd93bc6e5cb246568b80869b04fd4ffb but expected abd661505f99886ce04acbe602c22893a1b2dafb)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: fortnite-introduces-controversial-ai-generated-bra.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
