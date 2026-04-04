@@ -4341,3 +4341,13 @@ Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status
 To https://github.com/TheThinker0314/GenAI-news-site.git
    f6357ddab..8b63644ad  main -> main
 Created post: gartner-predicts-surge-in-ai-transparency-investme.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main fb24fd272] feat: Auto-post gmi-cloud-highlights-cost-efficient-gpu-infrastruc.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/gmi-cloud-highlights-cost-efficient-gpu-infrastruc.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at fb24fd27275ef3e980fd2c63e6f751c0fc688763 but expected 98f2ad43648d34e0ee7e968144f21978079c7782)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: gmi-cloud-highlights-cost-efficient-gpu-infrastruc.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
