@@ -6,20 +6,32 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #1a202c;
+  line-height: 1.2;
 }
 .article-content {
   font-size: 1.125rem;
-  color: #333;
+  color: #2d3748;
 }
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 a {
-  color: #0066cc;
+  color: #3182ce;
   text-decoration: none;
+  transition: color 0.2s;
 }
 a:hover {
   text-decoration: underline;
+  color: #2b6cb0;
+}
+blockquote {
+  border-left: 4px solid #e2e8f0;
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: #4a5568;
 }
