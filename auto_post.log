@@ -4139,3 +4139,13 @@ Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status
  create mode 100644 content/posts/playstation-acquires-generative-ai-vfx-company-cin.md
 Everything up-to-date
 Created post: playstation-acquires-generative-ai-vfx-company-cin.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 6e518848b] feat: Auto-post take-two-lays-off-its-head-of-ai-and-several-team-.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/take-two-lays-off-its-head-of-ai-and-several-team-.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at 6e518848b18e9a9dbbfa1048c01b3f30b56bd57d but expected 6fcfd66d43e30a359f111df45e1c3df78cc9aae4)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: take-two-lays-off-its-head-of-ai-and-several-team-.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
