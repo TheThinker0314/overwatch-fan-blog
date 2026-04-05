@@ -1,14 +1,7 @@
-<!-- SEO Enhancements -->
+<!-- layouts/partials/seo.html -->
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
-<!-- Canonical link -->
-<link rel="canonical" href="{{ .Permalink }}">
-
-<!-- Robots meta tag for SEO -->
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
 <!-- Open Graph meta tags -->
-<meta property="og:locale" content="{{ .Site.LanguageCode | default "en-US" }}">
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
@@ -18,45 +11,13 @@
 {{ range first 6 . }}
 <meta property="og:image" content="{{ . | absURL }}">
 {{ end }}
-{{ else }}
-{{ with .Site.Params.images }}
-<meta property="og:image" content="{{ index . 0 | absURL }}">
-{{ end }}
 {{ end }}
 
 <!-- Twitter Card meta tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@genainews">
-<meta name="twitter:creator" content="@genainews">
+<meta name="twitter:site" content="@genainewshub">
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 {{ with .Params.images }}
 <meta name="twitter:image" content="{{ index . 0 | absURL }}">
-{{ else }}
-{{ with .Site.Params.images }}
-<meta name="twitter:image" content="{{ index . 0 | absURL }}">
 {{ end }}
-{{ end }}
-
-<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
-<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}">
-
-
-<!-- Schema.org structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{{ if .IsPage }}Article{{ else }}WebSite{{ end }}",
-  "name": "{{ .Title }}",
-  "headline": "{{ .Title }}",
-  "url": "{{ .Permalink }}",
-  "description": "{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}"{{ if .IsPage }},
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}"
-  }
-  {{ end }}
-}
-</script><!-- Improved SEO block added on April 3, 2026 -->
