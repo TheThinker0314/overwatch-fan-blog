@@ -4875,3 +4875,11 @@ Created post: generative-ai-in-business-schools-friend-or-foe---.md
 To https://github.com/TheThinker0314/GenAI-news-site.git
    8bbb8a4da..df9c7fe9c  main -> main
 Created post: ive-been-testing-spotifys-generative-ai-to-make-my.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 4336e5e28] feat: Auto-post against-generative-ai-is-art-the-last-refuge-of-ou.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/against-generative-ai-is-art-the-last-refuge-of-ou.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   6ee1cd2c5..4336e5e28  main -> main
+Created post: against-generative-ai-is-art-the-last-refuge-of-ou.md
