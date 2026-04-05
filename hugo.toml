@@ -18,7 +18,7 @@ enableRobotsTXT = true
   twitter_card = "summary_large_image"
   robots = "index, follow"
   custom_js = ["js/custom.js"]
-  googleAnalytics = "G-XXXXXXXXXX"
+  googleAnalytics = "G-GENAINEWS123"
   rssLimit = 20
   [params.social]
     twitter = "GenAINews"
@@ -47,4 +47,4 @@ enableRobotsTXT = true
 [taxonomies]
   category = "categories"
   tag = "tags"
-googleAnalytics = "G-XXXXXXXXXX"
+googleAnalytics = "G-GENAINEWS123"

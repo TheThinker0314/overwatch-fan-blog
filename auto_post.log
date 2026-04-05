@@ -4621,3 +4621,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: oci-adds-generative-ai-exadata-cloudcustomer-and-o.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main a274f6f8f] feat: Auto-post south-dakota-lawmakers-embrace-ai-in-lawmaking-rai.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/south-dakota-lawmakers-embrace-ai-in-lawmaking-rai.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at a274f6f8f81b0c7bc56788ebc5b3ac92bc32baa7 but expected 56ec2e43ab66fdbf1dca7a058470a54642028842)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: south-dakota-lawmakers-embrace-ai-in-lawmaking-rai.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
