@@ -6,7 +6,7 @@ enableRobotsTXT = true
 
 [params]
   description = 'Your daily source for the latest breakthroughs, deep-dive analysis, and emerging trends in the world of Generative Artificial Intelligence, LLMs, and ChatGPT updates.'
-  keywords = ["Generative AI", "LLM", "ChatGPT", "AI News", "Machine Learning", "Tech Trends", "Deep Learning", "Artificial Intelligence"]
+  keywords = ["Generative AI", "LLM", "ChatGPT", "AI News", "Machine Learning", "Tech Trends", "Deep Learning", "Artificial Intelligence", "AI Ethics", "Neural Networks"]
   custom_css = ["css/custom.css"]
   background_color_class = "bg-near-black"
   author = "GenAI News Editorial Team"
