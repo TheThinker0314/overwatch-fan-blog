@@ -4867,3 +4867,11 @@ See "git help gc" for manual housekeeping.
 To https://github.com/TheThinker0314/GenAI-news-site.git
    d21831bd3..796a2a49c  main -> main
 Created post: generative-ai-in-business-schools-friend-or-foe---.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main df9c7fe9c] feat: Auto-post ive-been-testing-spotifys-generative-ai-to-make-my.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/ive-been-testing-spotifys-generative-ai-to-make-my.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   8bbb8a4da..df9c7fe9c  main -> main
+Created post: ive-been-testing-spotifys-generative-ai-to-make-my.md
