@@ -15,7 +15,7 @@
   }]
 }
 </script>
-<article class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden my-8 border border-gray-100">
+<article class="max-w-4xl mx-auto bg-slate-800 rounded-2xl shadow-lg overflow-hidden my-8 border border-slate-700">
   <header class="mb-8 relative">
     {{ if .Params.images }}
     <div class="w-full h-64 md:h-96 relative overflow-hidden">
@@ -32,9 +32,9 @@
       </div>
     </div>
     {{ else }}
-    <div class="p-8 pb-4 bg-gray-50 border-b border-gray-100">
-      <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight leading-tight">{{ .Title }}</h1>
-      <div class="flex items-center space-x-4 text-sm text-gray-500 font-medium">
+    <div class="p-8 pb-4 bg-slate-900/50 border-b border-slate-700">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-100 mb-4 tracking-tight leading-tight">{{ .Title }}</h1>
+      <div class="flex items-center space-x-4 text-sm text-slate-400 font-medium">
         <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
         {{ with .Params.author | default site.Params.author }}
         <span>&bull; By {{ . }}</span>
@@ -44,7 +44,7 @@
     {{ end }}
   </header>
 
-  <div class="prose prose-lg prose-blue max-w-none px-8 pb-12 prose-headings:font-bold prose-headings:text-gray-900 prose-a:text-blue-600 prose-img:rounded-xl">
+  <div class="prose prose-invert prose-lg prose-blue max-w-none px-8 pb-12 prose-headings:font-bold prose-headings:text-slate-100 prose-a:text-blue-400 prose-img:rounded-xl">
     {{ .Content }}
   </div>
 
