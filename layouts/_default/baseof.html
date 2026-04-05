@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}">
+<html lang="{{ site.LanguageCode }}" class="scroll-smooth">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,34 +8,39 @@
     {{ partial "seo.html" . }}
     {{ partial "head-additions.html" . }}
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      .glass-nav { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .gradient-text { background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
   </head>
-  <body class="bg-slate-900 text-slate-200 font-sans antialiased min-h-screen flex flex-col">
-    <header class="navbar sticky top-0 z-50">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="/" class="text-3xl font-extrabold tracking-tight hover:text-blue-200 transition-colors">{{ site.Title }}</a>
-        <nav class="space-x-6 text-lg font-medium">
+  <body class="bg-slate-900 text-slate-200 font-sans antialiased min-h-screen flex flex-col selection:bg-blue-500/30">
+    <header class="glass-nav sticky top-0 z-50 transition-all duration-300">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <a href="/" class="text-3xl font-extrabold tracking-tight hover:opacity-80 transition-opacity gradient-text">{{ site.Title }}</a>
+        <nav class="flex flex-wrap justify-center space-x-2 sm:space-x-6 text-sm sm:text-base font-medium">
           {{ range site.Menus.main }}
-          <a href="{{ .URL }}" class="hover:text-blue-300 transition-colors border-b-2 border-transparent hover:border-blue-300 pb-1">{{ .Name }}</a>
+          <a href="{{ .URL }}" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-all">{{ .Name }}</a>
           {{ end }}
         </nav>
       </div>
     </header>
 
-    <main id="main-content" class="flex-grow max-w-6xl mx-auto px-4 py-10 w-full">
-      <div class="bg-slate-800 shadow-xl rounded-xl border border-slate-700 p-6 md:p-10">
+    <main id="main-content" class="flex-grow w-full max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <article class="bg-slate-800/50 backdrop-blur-sm shadow-2xl rounded-2xl border border-slate-700/50 p-6 md:p-12 lg:p-16 ring-1 ring-white/5">
         {{ block "main" . }}{{ end }}
-      </div>
+      </article>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-10 text-center mt-auto border-t border-slate-800">
-      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <p class="mb-4 md:mb-0">&copy; {{ now.Format "2006" }} {{ site.Title }}. All rights reserved.</p>
-        <div class="space-x-4 font-medium">
+    <footer class="bg-slate-950 text-slate-400 py-12 mt-auto border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-sm font-medium">&copy; {{ now.Format "2006" }} <span class="text-slate-300">{{ site.Title }}</span>. All rights reserved.</p>
+        <div class="flex space-x-6 text-sm font-medium">
           <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
           <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a>
-          <a href="#" class="hover:text-blue-400 transition-colors">Contact Us</a>
+          <a href="#" class="hover:text-blue-400 transition-colors">Contact</a>
         </div>
       </div>
     </footer>
