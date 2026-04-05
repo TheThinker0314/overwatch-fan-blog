@@ -1,0 +1,9 @@
+---
+title: "GTA VI maker Take-Two lays off entire AI team months after CEO promised to ’embrace generative AI’ - financialexpress.com"
+date: 2026-04-05T14:30:02Z
+draft: false
+tags: ["GenAI", "News"]
+categories: ["News"]
+---
+
+[Read the full article here](https://news.google.com/rss/articles/CBMi6gFBVV95cUxNOHFVaFNFdHNwcGZpdFE3WW9tUGx0YnotWXlRY1ZueE50S3pGbUFlQVNMQ2NFOGxua2EyemRLYngxUjlIUVVwZFkyZjlUOUR5Y1lhdVJBMVZteU83WVAzRExOaC1NSGpjR2lycERGcU9QUGdGdjJvUDFFZjBGZVloQjB3QWxPQ0JRb1ByaVNuZ1hPVEd0WGdxYXNSX0gxNnhfLVd0VmMzenhSYTFRcVNocWhpRUE5V042YnRhcTlHbzhBdTNKdGJyY1hVenFpeGFoM3lCMUpNWnJ0NFp6dVBvTnB0a2stN1VVYXfSAfABQVVfeXFMTWQ0ekM5a3MxMTZZeWZEQzQ4WXpmdW9nYUR2dVVhSF9ZeGFKbUlVbG5HejNRZ05US21zTl9NM2tVMXk1SzVYampkVmh0MVA1SGhmRVZTNUt2R2lzSHFwTkZVNHdlRVctSDg0QTRXOFBEMVptLTVYQXI2dzJKaExBUW5PVmhoWWRTNmdZWHotQUZmWjJINnRHSVhtTWY5VHctdW1TR3NhRHR0QkFENGdmYXZULVFKdUd2M3RXd3VBZ3RVbjN5ek1qQ1dLd1ZWWVY5NGU0dW5BeHlWYWxMNERoNXRnTEh5TmdHZWc0MlhWWmRn?oc=5)
