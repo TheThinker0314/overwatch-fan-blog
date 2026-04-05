@@ -4959,3 +4959,13 @@ To https://github.com/TheThinker0314/GenAI-news-site.git
 error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
 Created post: sanjay-gondaliya-wins-excellence-in-generative-ai-.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 7cec80bff] feat: Auto-post dlss-5-looks-like-a-real-time-generative-ai-filter.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/dlss-5-looks-like-a-real-time-generative-ai-filter.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+ ! [remote rejected]     main -> main (cannot lock ref 'refs/heads/main': is at 7cec80bff3cfa689625b3f0869bde79bbf5fb84f but expected 9a85535832cad427754d9e3aea473ca7ec06be64)
+error: failed to push some refs to 'https://github.com/TheThinker0314/GenAI-news-site.git'
+Created post: dlss-5-looks-like-a-real-time-generative-ai-filter.md
+Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
