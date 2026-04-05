@@ -4781,3 +4781,11 @@ Created post: ai-driven-strategy-outlined-at-mobile-world-congre.md
 To https://github.com/TheThinker0314/GenAI-news-site.git
    7899cb7df..98fd73e0b  main -> main
 Created post: top-10-best-ai-companies-in-florida-usa-2026-led-b.md
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main f40fce13f] feat: Auto-post heres-how-generative-ai-affects-creativity-accordi.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/heres-how-generative-ai-affects-creativity-accordi.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   440d789bb..f40fce13f  main -> main
+Created post: heres-how-generative-ai-affects-creativity-accordi.md
