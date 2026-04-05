@@ -1,0 +1,9 @@
+---
+title: "GTA VI maker Take-Two lays off its entire AI team after saying it was 'actively embracing' the tech - The Times of India"
+date: 2026-04-05T06:00:02Z
+draft: false
+tags: ["GenAI", "News"]
+categories: ["News"]
+---
+
+[Read the full article here](https://news.google.com/rss/articles/CBMijAJBVV95cUxNWHZ0UGd0SkFBYm1FY0JsUG9ST2pPTFN5eUQ0VG5Jd3ZVTTFhb2ZLTTBiV2E1Ui04X2FyU1lnQ29RdTdJMkd1MmRKWXcwa2FWZDJ1ajRhd3RuSE1fOFZKUmVDbDRfNm5Jdng5bEhQMmtzcnJob1JLVGNDT3RkalZYT3pIczBjcTVKN2tua2oxdHdDaVhyWEV0NHk2U0tOc2thcDd2cFNHMnI3TGY3MEZrMzlJR3UzNElxQjZnXzhCM1BBXy1TaTRmX2VlMkh4VDc3ZzZmMzkxdVZzbUtFbjJDMjNIb1BjWkRTck84d01VOHhYZEpFekt3ZldxaktHa0lHUzR5c0JrZGp4SV9W0gGSAkFVX3lxTFBpaWR0eVdJdlFnejZ3YTVRREJZMWtadGJ3QTdjQTlRRkZkZVBBVjlyd0V4UEs5ZFFkTXFpRmQzUmZCaElMMHpJdmdqWE1paDllcVVneTMySWxrN0lWalctdENZUG9pQ3g4VTk5RFM1NjlJR25BZDgxZndKREphWjIxcGpPNjl0VXJCeW5WWVJJUGtzYmxqZzFIdFZtck5PNEUtLUVrb1pINktxOFB0VERMRlhoaHphNThMYVkyQ2l6SmR6OXVYZ3BRV3ptWV9ueDBCUkNSLTlJajRRZjhSWTRESlhDUFZPbVRUUDNsUzE1SjJvVVBPTnBsNnNpNFlWcUdzcWtJUDlBLUJfZmE2NVl5bkE?oc=5)
