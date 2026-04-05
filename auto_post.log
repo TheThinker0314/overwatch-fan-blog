@@ -4583,3 +4583,11 @@ hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 Created post: spring-ai-tutorial-how-to-develop-ai-agents-with-s.md
 Error: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+/home/ubuntu/.openclaw/workspace/GenAI-news-site/auto_post.py:39: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date_str = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+[main 6ab6a3cfd] feat: Auto-post nwo-policy-on-the-use-of-generative-ai---nwonl.md
+ 1 file changed, 9 insertions(+)
+ create mode 100644 content/posts/nwo-policy-on-the-use-of-generative-ai---nwonl.md
+To https://github.com/TheThinker0314/GenAI-news-site.git
+   17de41738..6ab6a3cfd  main -> main
+Created post: nwo-policy-on-the-use-of-generative-ai---nwonl.md
