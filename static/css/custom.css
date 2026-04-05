@@ -75,3 +75,10 @@ img {
 img:hover {
   transform: scale(1.02);
 }
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    article { padding: 1.5em; }
+    body { font-size: 1rem; }
+}
