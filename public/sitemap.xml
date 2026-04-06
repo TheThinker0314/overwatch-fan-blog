@@ -3,41 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://genai-news.com/categories/</loc>
-    <lastmod>2026-04-05T22:00:02+00:00</lastmod>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/tags/genai/</loc>
-    <lastmod>2026-04-05T22:00:02+00:00</lastmod>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/</loc>
-    <lastmod>2026-04-05T22:00:02+00:00</lastmod>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/making-generative-ai-work-well-tackling-effectiven/</loc>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/tags/news/</loc>
-    <lastmod>2026-04-05T22:00:02+00:00</lastmod>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/categories/news/</loc>
-    <lastmod>2026-04-05T22:00:02+00:00</lastmod>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/posts/</loc>
-    <lastmod>2026-04-05T22:00:02+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url><url>
-    <loc>https://genai-news.com/posts/sanjay-gondaliya-wins-excellence-in-generative-ai-/</loc>
-    <lastmod>2026-04-05T22:00:02+00:00</lastmod>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url><url>
     <loc>https://genai-news.com/tags/</loc>
+    <lastmod>2026-04-06T00:00:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/understanding-the-generative-ai-user---towards-dat/</loc>
+    <lastmod>2026-04-05T23:30:02+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/prompt-injection-and-llm-jailbreaks-in-production-/</loc>
+    <lastmod>2026-04-05T23:00:01+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/dlss-5-looks-like-a-real-time-generative-ai-filter/</loc>
+    <lastmod>2026-04-05T22:30:01+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://genai-news.com/posts/sanjay-gondaliya-wins-excellence-in-generative-ai-/</loc>
     <lastmod>2026-04-05T22:00:02+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
