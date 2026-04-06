@@ -118,3 +118,23 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
+/* Additional Design Improvements */
+body {
+  line-height: 1.8;
+  color: #e4e4e7;
+}
+h1 { font-size: 2.5rem; letter-spacing: -0.03em; }
+h2 { font-size: 2rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.article-content { font-size: 1.15rem; }
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
