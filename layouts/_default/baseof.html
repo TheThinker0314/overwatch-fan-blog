@@ -3,8 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    <meta name="keywords" content="Generative AI, AI News, Artificial Intelligence, Machine Learning, Deep Learning, ChatGPT, Midjourney, AI Tools, Technology News">
+    <meta name="author" content="{{ site.Title }}">
     <meta name="theme-color" content="#1e3a8a">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - Latest AI News and Updates{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image | absURL }}">{{ end }}
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ if .IsHome }}{{ site.Title }} - Latest AI News and Updates{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+    <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    {{ if .Params.image }}<meta property="twitter:image" content="{{ .Params.image | absURL }}">{{ end }}
+
     <title>{{ if .IsHome }}{{ site.Title }} - Latest AI News and Updates{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+    
+    <!-- SEO Optimization Canonical Link -->
+    <link rel="canonical" href="{{ .Permalink }}">
+
     {{ partial "seo.html" . }}
     {{ partial "head-additions.html" . }}
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
@@ -41,13 +63,6 @@
           <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
           <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a>
           <a href="#" class="hover:text-blue-400 transition-colors">Contact</a>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
->Terms of Service</a>
-          <a href="#" class="hover:text-blue-400 transition-colors">Contact Us</a>
         </div>
       </div>
     </footer>
